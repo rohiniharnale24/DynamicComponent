@@ -1,0 +1,13 @@
+<div class="row">
+  <header><h1>File Upload And Dynamic Components In Angular</h1></header>
+  <div class="col-sm-6 offset-sm-3">
+    <div class="ad-banner-example">
+      <h3>Advertisements</h3>
+      <div
+        *ngComponentOutlet="currentAd.component; inputs: currentAd.inputs"
+      ></div>
+      <button (click)="displayNextAd()">Next</button>
+    </div>
+    <button class="btn btn-warning" routerLink="/form">FillTheForm</button>
+  </div>
+</div>
